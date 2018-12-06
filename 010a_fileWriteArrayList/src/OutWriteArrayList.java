@@ -10,7 +10,7 @@ public class OutWriteArrayList {
 	
  public static void main(String[] args) {
 	
-	 File filename = new File("Friends.txt");
+	 File filename = new File("../TextFiles/Friends.txt");
 	 // non standard method
 	 ArrayList aList = new ArrayList();
 	 // Standard method --> ArrayList<String>
@@ -18,7 +18,7 @@ public class OutWriteArrayList {
 	 
 	 while (!friend.isEmpty()) {
 		 friend = JOptionPane.showInputDialog("Enter a friend's name.");
-		 if (!friend.isEmpty()) { //if (!friend.isEmpty()) aList.add(friend); this also works
+		 if (!friend.isEmpty()) { // if(!friend.isEmpty()) aList.add(friend); this also works
 			 aList.add(friend);
 		 }
 	 }
@@ -29,9 +29,10 @@ public class OutWriteArrayList {
 		 for (int i=0; i < sz; i++) {
 			 output.write(aList.get(i).toString() + "\n");
 		 }
+		 output.close();
 	 }
 	 catch (Exception e) {
-		 JOptionPane.showMessageDialog(null, "Cannot create that file");
+		 JOptionPane.showMessageDialog(null, "Cannot create that file " + e);
 	 }
  }
 }
