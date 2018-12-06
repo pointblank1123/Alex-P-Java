@@ -1,0 +1,4 @@
+IO print write
+Course: 30 credits
+Year: 120 credits
+Degree: 360 credits
