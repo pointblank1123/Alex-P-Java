@@ -8,23 +8,24 @@ public class Cipher {
 	private String encodedText = "";
 	private int key = 0;
 	//private Scanner kbd= new Scanner(System.in);
-	
+	/********************************************************
 	public Cipher() {
 		
-		System.out.println("Entered Caesar constructor");
+		//System.out.println("Entered Caesar constructor");
 	}
+	*********************************************************/
 	public void getPlainText() {
 		plainText = JOptionPane.showInputDialog("Enter the plain Text");
 		plainText = plainText.toLowerCase();
 		//System.out.println("Enter the plain text");
 		//plainText = kbd.nextLine();
-		System.out.println("Plain Text: "+plainText);
+		//System.out.println("Plain Text: "+plainText);
 	}
 	public void getKey() {
 		key = Integer.parseInt(JOptionPane.showInputDialog("Enter the shift key"));
 		//System.out.println("Enter the shift key");
 		//key = kbd.nextInt();
-		System.out.println("key: " + key);
+		//System.out.println("key: " + key);
 		
 	}
 	public void encrypt() {
@@ -40,14 +41,14 @@ public class Cipher {
 			}
 		}
 		JOptionPane.showMessageDialog(null, "Encoded word: " + encodedText );
-		System.out.println(encodedText);
+		//System.out.println(encodedText);
 	}
 	public String getED() {
 		//System.out.println("Do you want to encrypt or decrypt");
 		//String ED = kbd.nextLine();
 		String ED = JOptionPane.showInputDialog("Do you want to Encrypt or Decrypt ");
 		ED = ("" + ED.charAt(0)).toUpperCase();
-		System.out.println("Selected "+ ED);
+		//System.out.println("Selected "+ ED);
 		return ED;
 	}
 	public void decrypt() {
@@ -66,6 +67,6 @@ public class Cipher {
 			}
 		}
 		JOptionPane.showMessageDialog(null, "Decoded word: " + encodedText );
-		System.out.println("Decoded Word: " + encodedText);
+		//System.out.println("Decoded Word: " + encodedText);
 	}
 }
