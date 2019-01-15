@@ -12,7 +12,7 @@ public class OutWriteArrayList {
 	
 	 File filename = new File("../TextFiles/Friends.txt");
 	 // non standard method
-	 ArrayList aList = new ArrayList();
+	 ArrayList<String> aList = new ArrayList<String>();
 	 // Standard method --> ArrayList<String>
 	 String friend = " ";
 	 
