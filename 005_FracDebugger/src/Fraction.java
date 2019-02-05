@@ -47,10 +47,15 @@ public class Fraction
 	public Fraction(String fractionString) {
 
 		int separatorLocation = fractionString.indexOf("/");
+<<<<<<< HEAD
 		String strNumerator = fractionString.substring(0,
 				separatorLocation);
 		String strDenominator = fractionString
 				.substring(separatorLocation + 1);
+=======
+		String strNumerator = fractionString.substring(0,separatorLocation);
+		String strDenominator = fractionString.substring(separatorLocation + 1);
+>>>>>>> edc8e4e9d0b66c092e5349a1b635113549050039
 
 		this.numerator = Integer.parseInt(strNumerator);
 		this.denominator = Integer.parseInt(strDenominator);

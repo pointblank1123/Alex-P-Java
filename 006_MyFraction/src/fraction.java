@@ -62,6 +62,7 @@ public class fraction {
 		TotalN1 = numer*denom1;
 		TotalD = denom*denom1;
 		TotalN2 = numer1* denom;
+<<<<<<< HEAD
 		if(select == 0) {
 			TotalNumer = TotalN1+TotalN2;
 			LCD();
@@ -80,19 +81,56 @@ public class fraction {
 			TotalD = denom * numer1;
 			LCDDiv();
 		}
+=======
+	/**
+	 * Determines based on selection what function to use addition, subtraction, multiplication, division
+	 */
+		if(select == 0) {
+			// add
+			TotalNumer = TotalN1+TotalN2;
+		}
+		else if (select == 1) {
+			// sub
+			TotalNumer = TotalN1-TotalN2;
+		}
+		else if (select == 2) {
+			// mult
+			TotalNumer = numer * numer1;
+			TotalD = denom * denom1;
+		}
+		else if (select == 3) {
+			//div
+			TotalNumer = numer * denom1;
+			TotalD = denom * numer1;
+		}
+		LCD();
+>>>>>>> edc8e4e9d0b66c092e5349a1b635113549050039
 		CreateSep();
 		setTotal();
 	}
 	
 	//methods
 	/**
+<<<<<<< HEAD
 	 * @return final answer sent to fracTester in JOp output message 
 	 * 
+=======
+	 * sets and sends final answer to fracTester class used in JOp output message
+	 * @return answer
+>>>>>>> edc8e4e9d0b66c092e5349a1b635113549050039
 	 */
 	public String setTotal(){
 		String answer =  " " + TotalNumer + "\n" +seperator+"\n"+ " " + TotalD;
 		return answer;
 	}
+<<<<<<< HEAD
+=======
+	/**
+	 * Creates a separator for the JOp pane to display at the end by adding two to the length of the largest number
+	 * and then adding that many dashes to the separator.
+	 * @return separator
+	 */
+>>>>>>> edc8e4e9d0b66c092e5349a1b635113549050039
 	public String CreateSep() {
 		seperator = "";
 		int len=0;
@@ -102,15 +140,28 @@ public class fraction {
 		else {
 			len=Integer.toString(TotalNumer).length()+2;
 		}
+<<<<<<< HEAD
 		for(int c=0;c<len;c++) { 
+=======
+		for(int c=0;c<=len;c++) { 
+>>>>>>> edc8e4e9d0b66c092e5349a1b635113549050039
 			seperator += "-";
 		}
 		return seperator;
 	}
+<<<<<<< HEAD
+=======
+	/**
+	 * Finds lowest common denominator by finding the lowest number in the fraction
+	 * runs a loop until that number is reached and finds the largest divisor common to both the numerator and denominator
+	 * Divides the total numerator and denominator by that amount
+	 */
+>>>>>>> edc8e4e9d0b66c092e5349a1b635113549050039
 	public void LCD() {
 		lowest = 0;
 		int divisor = 0;
 		if (this.TotalNumer>this.TotalD) {
+<<<<<<< HEAD
 			lowest = this.TotalD/2;
 		}
 		else if(this.TotalNumer<this.TotalD) {
@@ -131,6 +182,8 @@ public class fraction {
 		lowest = 0;
 		int divisor = 0;
 		if (this.TotalNumer>this.TotalD) {
+=======
+>>>>>>> edc8e4e9d0b66c092e5349a1b635113549050039
 			lowest = this.TotalD;
 		}
 		else if(this.TotalNumer<this.TotalD) {

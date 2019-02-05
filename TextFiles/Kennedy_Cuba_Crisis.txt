@@ -34,7 +34,11 @@ Acting, therefore, in the defense of our own security and of the entire Western 
 
 First: To halt this offensive buildup a strict quarantine on all offensive military equipment under shipment to Cuba is being initiated. All ships of any kind bound for Cuba from whatever nation or port will, if found to contain cargoes of offensive weapons, be turned back. This quarantine will be extended, if needed, to other types of cargo and carriers. We are not at this time, however, denying the necessities of life as the Soviets attempted to do in their Berlin blockade of 1948.
 
+<<<<<<< HEAD
 Second: I have directed the continued and increased close surveillance of Cuba and its military buildup. The foreign ministers of the OAS [Organization of American States], in their communiqué' of October 6, rejected secrecy on such matters in this hemisphere. Should these offensive military preparations continue, thus increasing the threat to the hemisphere, further action will be justified. I have directed the Armed Forces to prepare for any eventualities; and I trust that in the interest of both the Cuban people and the Soviet technicians at the sites, the hazards to all concerned of continuing this threat will be recognized.
+=======
+Second: I have directed the continued and increased close surveillance of Cuba and its military buildup. The foreign ministers of the OAS [Organization of American States], in their communique' of October 6, rejected secrecy on such matters in this hemisphere. Should these offensive military preparations continue, thus increasing the threat to the hemisphere, further action will be justified. I have directed the Armed Forces to prepare for any eventualities; and I trust that in the interest of both the Cuban people and the Soviet technicians at the sites, the hazards to all concerned of continuing this threat will be recognized.
+>>>>>>> edc8e4e9d0b66c092e5349a1b635113549050039
 
 Third: It shall be the policy of this nation to regard any nuclear missile launched from Cuba against any nation in the Western Hemisphere as an attack by the Soviet Union on the United States, requiring a full retaliatory response upon the Soviet Union.
 

@@ -3,10 +3,19 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
+<<<<<<< HEAD
 public class fileReadArrayList {
 
 	public static void main(String[] args) {
 		String filename = "/home/compsci/eclipse-workspace/TextFiles/Kennedy_Cuba_Crisis.txt";
+=======
+import javax.swing.JOptionPane;
+
+public class fileReadArrayList {
+
+	public static void main(String[] args) {
+		String filename = "/home/compsci/eclipse-workspace/TextFiles/SampleTextFile_1000kb.txt";
+>>>>>>> edc8e4e9d0b66c092e5349a1b635113549050039
 		String line;
 		ArrayList<String> alist = new ArrayList<String>();
 		String alpha="abcdefghijklmnopqrstuvwxyz0123456789.,:;-\"?[]' ";
@@ -18,7 +27,10 @@ public class fileReadArrayList {
 		//ArrayList<Character> alphaChars = new ArrayList<Character>();
 		
 		sortMethods sm = new sortMethods();
+<<<<<<< HEAD
 		MergeSort ms = new MergeSort();
+=======
+>>>>>>> edc8e4e9d0b66c092e5349a1b635113549050039
 		
 		try {
 			BufferedReader input = new BufferedReader(new FileReader(filename));
@@ -57,6 +69,7 @@ public class fileReadArrayList {
 				}
 			}
 		}
+<<<<<<< HEAD
 		//Bubble sort
 		//sm.bubbleSort(alphaArray,charAlpha);
 		//Insert sort
@@ -65,6 +78,35 @@ public class fileReadArrayList {
 		//sm.insertSortAList(alphaArrayL, alphaChars);
 		//merge sort
 		ms.sort(alphaArray, charAlpha);
+=======
+        String[] options = {"Bubble Sort", "Insert Sort", "Merge Sort", "Quick Sort", "Selection Sort"};
+
+        int x = JOptionPane.showOptionDialog(null, "Which type of sort do you want to use?",
+                "Click a button",
+                JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
+		//Bubble sort
+        if (x==0) {
+        	sm.bubbleSort(alphaArray,charAlpha);
+        }
+		//Insert sort
+        if (x==1) {
+        	sm.insertSort(alphaArray, charAlpha);
+        }
+		//Insert sort w/ ArrayList
+		//sm.insertSortAList(alphaArrayL, alphaChars);
+		//Merge sort
+        if(x==2) {
+        	sm.MergeSort(alphaArray, charAlpha);
+        }
+		//QuickSort
+        if(x==3) {
+        	sm.quickSort(alphaArray, charAlpha);
+        }
+		//Selection Sort
+        if(x==4) {
+        	sm.selectionSort(alphaArray, charAlpha);
+        }
+>>>>>>> edc8e4e9d0b66c092e5349a1b635113549050039
 		
 		//unknown characters
 		System.out.println("unknown: " + unknown);
