@@ -7,13 +7,15 @@ public class CodeWordChecker implements StringChecker{
 	private int minLength;
 	private int maxLength;
 	private String notAllowed;
-	/**
-	 * @variable 
+	/** 
 	 * +1 point for present variables in private instance
-	 * 
+	 * <br>
 	 * +3 points for constructors
+	 * <br>
 	 * 	1 for declared header
+	 * <br>
 	 * 	1 for usage of all proper parameters
+	 * <br>
 	 * 	1 for usage of default vales and parameters in 1 parameter constructor
 	 */
 	public CodeWordChecker(int minLen, int maxLen, String symbol) {
@@ -28,9 +30,13 @@ public class CodeWordChecker implements StringChecker{
 	}
 	/**
 	 * +4 points for IsValid method
+	 * <br>
 	 * 	1 point for declared header 
+	 * <br>
 	 * 	1 point for checking length between min and max inclusively
+	 * <br>
 	 * 	1 point for checking for unwanted string
+	 * <br>
 	 * 	1 point for returns true if length is within bounds and unwanted string is not present
 	 */
 	public boolean isValid(String str) {
