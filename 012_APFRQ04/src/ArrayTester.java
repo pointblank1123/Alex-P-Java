@@ -9,13 +9,17 @@ public class ArrayTester {
 	static String col1;
 	/**
 	 * 
-	 * @param arr2D
-	 * @param c
-	 * @return
+	 * @param arr2D 2D array that is input
+	 * @param c	column number
+	 * @return result of generated column
 	 * Part a:
+	 * <br>
 	 * +1 point for constructing int array with the size arr2D.length
+	 * <br>
 	 * +1 point for accessing all items in one column of arr2D (no bounds error)
+	 * <br>
 	 * +1 point for assignment of one element from arr2D to corresponding element in new array
+	 * <br>
 	 * +1 point on exit: with the new array contains all elements of selected column
 	 */
 	public static int[] getColumn(int[][] arr2D, int c) {	
@@ -53,13 +57,19 @@ public class ArrayTester {
 	}
 	/**
 	 * 
-	 * @param square
-	 * @return
+	 * @param square 2D array input into program
+	 * @return return false if any conditions are not met otherwise return true
+	 * <hr>
 	 * Part b:
+	 * <br>
 	 * +1 point for calling containsDuplicates referencing a row or column of square
+	 * <br>
 	 * +1 point for calling hasAllValues referencing 2 different rows, 2 different columns or a row and a column
+	 * <br>
 	 * +1 point for applying hasAllValues to all rows or all columns
+	 * <br>
 	 * +1 point for calling getColumn to obtain a column from square
+	 * <br>
 	 * +1 point for returning true if all three latin square requirements are met otherwise false
 	 */
 	public static boolean isLatin(int[][] square) {
